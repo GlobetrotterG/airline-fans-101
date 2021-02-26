@@ -36,3 +36,25 @@ As a User:
 *	I want a website that is user-friendly. 
 *	I want the site to making the process of adding, editing, logging in, registering and deleting to be easy for me. 
 
+Site owner goals
+
+*	To have a website that will catch the interest of any airline or aviation fans to share their stories or experiences, and also following our social media pages. 
+*	To make the site personal for the user to share information about their airline experience or their love for the airline.
+*	To have a site with a great functionality that makes them connect with other users who shares the same interest and love for the airline or aviation, through reading what has been shared by other users. 
+
+## User Requirements and Expectations
+
+Requirements
+
+*	Easy to navigate using buttons
+*	A profile page that has a functional overview that will have an element of appeal
+*	Easy way to add information to be shared on the profile dashboard
+*	Easy way to log in and log out to the dashboard
+*	Being able to delete or even edit a shared post.
+
+Expectations
+
+*	When there are multiple shared posts, it should be easy to navigate between these posts
+*	A profile page that all the information which is relevant is visible 
+*	It is easy to add posts and the ability to add photos for relevant posts created
+
