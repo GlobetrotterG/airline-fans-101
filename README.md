@@ -20,4 +20,19 @@ Buckle up! And get ready for take-off! And get yourself immersed in the world of
 *	A site that creates a community of airline and aviation lovers to share their experiences and what they loved about their inflight experience. 
 *	This site will also give users in general an insight on a specific airline on what they are offering on their flights.
 
+## User Stories
+
+As a User:
+
+*	I want an online community of airline fans created in one website.
+*	I want to have the ability to create my own account with ease. 
+*	I want to be able to log in and log out after creating an account.
+*	I want to be able to read any articles shared by other airline or aviation fans. 
+*	I want to be able to share my airline or aviation experience and for others to see it, and able to write my experience and upload photos without any limit of the number of shared posts I create.
+*	I am able to go back and edit what I’ve shared.
+*   I am able to delete what I’ve shared whenever I can.
+*	I have a dashboard facility page personalised for me so I can see what I’ve shared and what others have shared.
+*	I want a site that has several social media pages that I can follow and reach out to them through direct messages. 
+*	I want a website that is user-friendly. 
+*	I want the site to making the process of adding, editing, logging in, registering and deleting to be easy for me. 
 
