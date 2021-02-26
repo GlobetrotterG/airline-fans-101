@@ -1,45 +1,11 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Airline Fans 101
 
-Welcome Geoffrey C. Hutchinson,
+# Project Goals
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## For someone that used to work in the Airline industry that travels the world, and meeting different people onboard flights, it was always drilled into our minds that when someone travels from point A to point B, whether for business, reconnecting with family and friends, or wanting to see the world, or on a holiday… That journey experience and excitement begins the moment they step foot onboard that plane. So everything that we do in terms of service and product offering will make or break the customer or passengers experience of the airline. 
+## Although not every passenger or customer may have that excitement being onboard, as they would like to just arrive to their destination in comfort, but there are a select number who takes their interest in airline travel to the next level. They are what we call the “Aviation Geeks” or “AvGeeks.” They love everything about the aircraft. They would have extensive knowledge on the aircraft types, onboard service, airline meals specific to the route, aircraft seats to knowing which seat numbers are the best for take off or landing. They would even collect anything that is offered to them onboard such as airline magazines, amenity kits, to even plastic cups with airline logos. With the power of social media, you could also spot an AvGeek who will take lots of photos of airline window views to taking pictures of their airline meal, or the millions of postings about the newest Airbus or Boeing aircraft models.
+## Even before working as a Flight Attendant, I already considered myself as an AvGeek! This is one of the reasons why I created this project, because of my love for the airline industry, and also have a platform for fellow Aviation Geeks or Airline Fans like myself, share their inflight experience or their favourite aircraft or airline. 
+## Buckle up! And get ready for take-off! And get yourself immersed in the world of Airline Fans 101! 
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
