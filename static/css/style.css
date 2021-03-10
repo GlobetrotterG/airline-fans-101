@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rammetto+One&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Luckiest+Guy&family=Rammetto+One&family=Roboto+Slab&display=swap');
 
 body {
-	font-family: 'Rammetto One', sans-serif;
+	font-family: 'Roboto', sans-serif;
     background-color: #D0ADA7;   
 }
 
 .nav-wrapper {
+    font-family: 'Roboto', sans-serif;
     background-color: #5d2e46;
+}
+
+.brand-logo {
+    font-family: 'Rammetto One', sans-serif;
     font-weight: bolder;
-    font-style: oblique;
-    font-size: 2rem;
 }
 
 
