@@ -20,10 +20,11 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/home")
-def home():
-    return render_template("home.html")
-
+@app.route("/shares")
+def shares():
+    share = mongo.db.shares.find()
+    return render_template("share.html", share=share)
+    
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
