@@ -1,25 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 
+<h3 class="center-align"><i class="fas fa-suitcase-rolling"></i> Airline Fan Reviews</h3>
 
-
-{% for shares in share %}
-    {{ shares.airline_name }}<br>
-    {{ shares.airline_class }}<br>
-    {{ shares.destination}}<br>
-    {{ shares.review}}<br>
-{% endfor %}
-
-<ul class="collapsible popout pop">
+<ul class="collapsible popout">
     {% for shares in share %}
     <li>
         <div class="collapsible-header">
             <i class="fas fa-arrow-circle-down"></i>
             <i class="fas fa-plane"></i>
-            <strong>{{ shares.airline_name }}</strong> 
+            <strong>Airline: {{ shares.airline_name }}</strong> 
         </div>
         <div class="collapsible-body">
-            <strong>{{ shares.airline_class }}</strong>     
+            <strong>Cabin Class: {{ shares.airline_class }}</strong>  
+            <p>{{ shares.airline_fans }}</p>
+            <p><em>Airline Fan: {{ shares.airline_reviewer }}</em></p>   
         </div>
     </li>
     {% endfor %}

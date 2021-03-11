@@ -92,10 +92,23 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_review")
+@app.route("/add_review", methods=["GET", "POST"])
 def add_review():
+    if request.method == "POST":
+        reviewer = {
+                "category_name": request.form.get("category_name"),
+                "airline_name": request.form.get("airline_name"),
+                "airline_class": request.form.get("airline_class"),
+                "destination": request.form.get("destination"),
+                "review": request.form.get("review"),
+                "airline_reviewer": session["airlinefan"]
+        }
+        mongo.db.shares.insert_one(reviewer)
+        flash("Your Review is Successfully Added from 33,000 Feet")
+        return redirect(url_for("shares"))
+
     return render_template("add_review.html")
-    
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
