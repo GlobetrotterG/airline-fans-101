@@ -35,6 +35,12 @@ body {
     line-height: 3;
 }
 
+.collapsible-header {
+    font-family: 'Luckiest Guy', sans-serif;
+    background-color: #a675a1;
+    font-style: oblique;
+}
+
 
 
 

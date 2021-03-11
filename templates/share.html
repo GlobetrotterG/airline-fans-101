@@ -1,13 +1,28 @@
-{% extends "base.html" %}   
+{% extends "base.html" %}
 {% block content %}
 
 
 
-   {% for shares in share %}
-        {{ shares.airline_name }}<br>
-        {{ shares.airline_class }}<br>
-        {{ shares.destination}}<br>
-        {{ shares.review}}<br>
-    {% endfor %}
+{% for shares in share %}
+    {{ shares.airline_name }}<br>
+    {{ shares.airline_class }}<br>
+    {{ shares.destination}}<br>
+    {{ shares.review}}<br>
+{% endfor %}
+
+<ul class="collapsible popout pop">
+    <li>
+        <div class="collapsible-header"><i class="fas fa-plane"></i>First</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="fas fa-plane"></i>Second</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="fas fa-plane"></i>Third</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+</ul>
 
 {% endblock %}
