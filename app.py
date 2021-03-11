@@ -29,6 +29,22 @@ def shares():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+        current_user = mongo.db.fan_users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if current_user:
+            flash("Username already exists")
+            return redirect(url_for("register"))
+
+        register = {
+            "username": request.form.get("username").lower(),
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        mongo.db.fan_users.insert_one(register)
+
+        session["airlinefan"] = request.form.get("username").lower()
+        flash("Registration Successful!")
     return render_template("register.html")
 
 

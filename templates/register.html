@@ -10,7 +10,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-passport prefix"></i>
-                    <input id="username" name="username" type="text" class="validate">
+                    <input id="username" name="username" type="text" 
+                        minlength="4" maxlength="16" pattern="^[a-zA-Z0-9]{4,16}$" class="validate" required>
                     <label for="username">Username</label>
                 </div>
             </div>
@@ -18,14 +19,15 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-lock prefix"></i>
-                    <input id="password" name="password" type="password" class="validate">
+                    <input id="password" name="password" type="password" minlength="4" 
+                        maxlength="16" pattern="^[a-zA-Z0-9]{4,16}$" class="validate" required>
                     <label for="password">Password</label>
                 </div>
             </div>
             <!-- register -->
             <div class="row">
                 <button type="submit" class="col s12 btn-large button-register">
-                    Register <i class="fas fa-sign-in-alt"></i>
+                    Register <i class="fas fa-luggage-cart"></i>
                 </button>
             </div>
         </div>

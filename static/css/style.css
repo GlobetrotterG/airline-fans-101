@@ -25,6 +25,16 @@ body {
     background-color: #5d2e46;
 }
 
+.flash_message {
+    font-family: 'Luckiest Guy', sans-serif;
+    background-color: #ad6a6c;
+    color: #fff;
+}
+
+.flashes h4 {
+    line-height: 3;
+}
+
 
 
 
