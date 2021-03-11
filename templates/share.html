@@ -11,18 +11,18 @@
 {% endfor %}
 
 <ul class="collapsible popout pop">
+    {% for shares in share %}
     <li>
-        <div class="collapsible-header"><i class="fas fa-plane"></i>First</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header">
+            <i class="fas fa-arrow-circle-down"></i>
+            <i class="fas fa-plane"></i>
+            <strong>{{ shares.airline_name }}</strong> 
+        </div>
+        <div class="collapsible-body">
+            <strong>{{ shares.airline_class }}</strong>     
+        </div>
     </li>
-    <li>
-        <div class="collapsible-header"><i class="fas fa-plane"></i>Second</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="fas fa-plane"></i>Third</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
+    {% endfor %}
 </ul>
 
 {% endblock %}
