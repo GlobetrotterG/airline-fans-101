@@ -45,6 +45,7 @@ def register():
 
         session["airlinefan"] = request.form.get("username").lower()
         flash("Registration Successful!")
+        return redirect(url_for("profile", username=session["airlinefan"]))
     return render_template("register.html")
 
 
@@ -60,6 +61,8 @@ def login():
                     session["airlinefan"] = request.form.get("username").lower()
                     flash("Welcome Aboard Airline Fans 101, {}!".format(
                         request.form.get("username")))
+                    return redirect(url_for(
+                        "profile", username=session["airlinefan"]))
             else:
                 flash("Please return to the Boarding Gate! Incorrect Username and/or Password")
                 return redirect(url_for("login"))
@@ -69,6 +72,14 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("login.html")
+
+
+@app.route("/profile/<username>", methods=["GET", "POST"])
+def profile(username):
+    username = mongo.db.fan_users.find_one(
+        {"username": session["airlinefan"]})["username"]
+    return render_template("profile.html", username=username)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
