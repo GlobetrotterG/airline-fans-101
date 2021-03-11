@@ -78,7 +78,18 @@ def login():
 def profile(username):
     username = mongo.db.fan_users.find_one(
         {"username": session["airlinefan"]})["username"]
-    return render_template("profile.html", username=username)
+    
+    if session["airlinefan"]:
+        return render_template("profile.html", username=username)
+    
+    return redirect(url_for("login"))
+
+
+@app.route("/logout")
+def logout():
+    flash("We've landed! You are now logged out")
+    session.pop("airlinefan")
+    return redirect(url_for("login"))
 
 
 if __name__ == "__main__":

@@ -25,11 +25,14 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down nav-text">
                     <li><a href="{{ url_for('shares') }}">Home</a></li>
-                    <li><a href="#">Fan Shares</a></li>
-                    <li><a href="{{ url_for('profile', username=session['airlinefan']) }}">Profile</a></li>
-                    <li><a href="{{ url_for('login') }}">Log in</a></li>
-                    <li><a href="#">Log Out</a></li>
-                    <li><a href="{{ url_for('register') }}">Register</a></li>
+                    {% if session.airlinefan %}
+                        <li><a href="#">Fan Shares</a></li>
+                        <li><a href="{{ url_for('profile', username=session['airlinefan']) }}">Profile</a></li>
+                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                    {% else %}
+                        <li><a href="{{ url_for('login') }}">Log in</a></li>
+                        <li><a href="{{ url_for('register') }}">Register</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
@@ -40,24 +43,27 @@
                 <h4 class="center-align">Airline Fans 101</h4>
             </li>
             <li><a href="{{ url_for('shares') }}">Home</a></li>
-            <li><a href="#">Fan Shares</a></li>
-            <li><a href="{{ url_for('profile', username=session['airlinefan']) }}">Profile</a></li>
-            <li><a href="{{ url_for('login') }}">Log in</a></li>
-            <li><a href="#">Log Out</a></li>
-            <li><a href="{{ url_for('register') }}">Register</a></li>
+            {% if session.airlinefan %}
+                <li><a href="#">Fan Shares</a></li>
+                <li><a href="{{ url_for('profile', username=session['airlinefan']) }}">Profile</a></li>
+                <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+            {% else %}
+                <li><a href="{{ url_for('login') }}">Log in</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+            {% endif %}
         </ul>
     </header>
 
     <section>
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="row flashes">
-                        <h4 class="flash_message center-align">{{ message }}</h4>
-                    </div>
-                {% endfor %}
-            {% endif %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="row flashes">
+            <h4 class="flash_message center-align">{{ message }}</h4>
+        </div>
+        {% endfor %}
+        {% endif %}
         {% endwith %}
     </section>
 
