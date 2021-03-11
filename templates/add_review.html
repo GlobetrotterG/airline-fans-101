@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="center-align"><i class="fas fa-suitcase-rolling"></i> Share Your Airline Experience</h3>
+
+<div class="row">
+    <form class="col s12" method="POST" action="">
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-plane prefix"></i>
+                <input id="icon_plane" type="text" class="validate">
+                <label for="icon_plane">Airline</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="fas fa-wine-glass-alt prefix"></i>
+                <input id="icon_wine" type="tel" class="validate">
+                <label for="icon_wine">Class</label>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
