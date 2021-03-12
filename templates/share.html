@@ -10,7 +10,9 @@
             <div class="col s3">
                 <i class="fas fa-arrow-circle-down"></i>
                 <i class="fas fa-plane"></i>
-                <a href="{{ url_for('edit_review', share_id=share._id) }}" class="waves-effect waves-light btn-small">Edit</a>
+                {% if session.airlinefan|lower == share.airline_reviewer|lower %}
+                    <a href="{{ url_for('edit_review', share_id=share._id) }}" class="waves-effect waves-light btn-small">Edit</a>
+                {% endif %}
             </div>
             <div class="col s9">
                 <strong>Airline: {{ share.airline_name }}</strong> 
