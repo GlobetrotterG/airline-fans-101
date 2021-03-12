@@ -4,23 +4,23 @@
 <h3 class="center-align flash_message"><i class="fas fa-suitcase-rolling"></i> Airline Fan Reviews</h3>
 
 <ul class="collapsible popout">
-    {% for shares in share %}
+    {% for share in shares %}
     <li>
         <div class="collapsible-header">
             <div class="col s3">
                 <i class="fas fa-arrow-circle-down"></i>
                 <i class="fas fa-plane"></i>
-                <a class="waves-effect waves-light btn-small">Edit</a>
+                <a href="{{ url_for('edit_review', share_id=share._id) }}" class="waves-effect waves-light btn-small">Edit</a>
             </div>
             <div class="col s9">
-                <strong>Airline: {{ shares.airline_name }}</strong> 
+                <strong>Airline: {{ share.airline_name }}</strong> 
             </div>
         </div>
         <div class="collapsible-body">
-            <strong>Cabin Class: {{ shares.airline_class }}</strong>  
-            <p>Destination: {{ shares.destination }}</p>
-            <p>Review: {{ shares.review}}</p>
-            <p><em>Airline Fan Member: {{ shares.airline_reviewer }}</em></p>   
+            <strong>Cabin Class: {{ share.airline_class }}</strong>  
+            <p>Destination: {{ share.destination }}</p>
+            <p>Review: {{ share.review}}</p>
+            <p><em>Airline Fan Member: {{ share.airline_reviewer }}</em></p>   
         </div>
     </li>
     {% endfor %}

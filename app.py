@@ -22,8 +22,8 @@ mongo = PyMongo(app)
 
 @app.route("/")
 def shares():
-    share = list(mongo.db.shares.find())
-    return render_template("share.html", share=share)
+    shares = list(mongo.db.shares.find())
+    return render_template("share.html", shares=shares)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -107,6 +107,12 @@ def add_review():
         return redirect(url_for("shares"))
 
     return render_template("add_review.html")
+
+
+@app.route("/edit_review/<share_id>", methods=["GET", "POST"])
+def edit_review(share_id):
+    share = mongo.db.shares.find_one({"_id": ObjectId(share_id)})
+    return render_template("edit_review.html", share=share)
 
 
 if __name__ == "__main__":
