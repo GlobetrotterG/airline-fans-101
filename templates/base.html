@@ -26,7 +26,7 @@
                 <ul class="right hide-on-med-and-down nav-text">
                     <li><a href="{{ url_for('shares') }}">Home</a></li>
                     {% if session.airlinefan %}
-                        <li><a href="{{ url_for('add_review') }}">Fan Shares</a></li>
+                        <li><a href="{{ url_for('add_review') }}">Share Your Experience</a></li>
                         <li><a href="{{ url_for('profile', username=session['airlinefan']) }}">Profile</a></li>
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}

@@ -21,7 +21,6 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/shares")
 def shares():
     share = list(mongo.db.shares.find())
     return render_template("share.html", share=share)
