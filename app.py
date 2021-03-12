@@ -127,6 +127,14 @@ def edit_review(share_id):
     return render_template("edit_review.html", share=share)
 
 
+@app.route("/delete_review/<share_id>")
+def delete_review(share_id):
+    mongo.db.shares.remove({"_id": ObjectId(share_id)})
+    flash("Review is now Deleted. Would you like Tea of Coffee?")
+    return redirect(url_for("shares"))
+
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
