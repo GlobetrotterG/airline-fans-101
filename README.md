@@ -58,3 +58,22 @@ Expectations
 *	A profile page that all the information which is relevant is visible 
 *	It is easy to add posts and the ability to add photos for relevant posts created
 
+Colour Theme 
+I used [coolors](https://coolors.co/d0ada7-5d2e46-ad6a6c-a675a1-8f3985-e8d6cb) for the colour theme of my project. 
+![airlinefans101colour](assets/images/ms3colors.png)
+
+
+Fonts
+I used a selection of [Google Fonts]( https://fonts.google.com/). I selected the following: 
+Roboto
+Luckiest Guy
+Rammetto One
+
+
+Credits
+
+* I’d like to thank my mentor Simen Daehlin for his support and help for me to come up with this project.
+* I created this project in a very short span of time. I draw my inspiration of this project from our relevant modules at the Code Institute which has helped me create my own ideas for this project. 
+* I’d like to thank the Slack community and the tutor support team who always responded to me when I was stuck with something. 
+
+
