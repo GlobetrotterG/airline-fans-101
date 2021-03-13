@@ -151,12 +151,16 @@ Cloning on GitHub
 * Follow the "setup" steps above to create env.py and .gitignore files for the hidden environment variables.
 * The app can now be opened in a browser by typing in the terminal: python3 app.py.
 
+## Issues / Bugs
 
+* I had an issue with my workspace being blank and found an error on the terminal saying "mysqlId is running as pid 538." 
+I later found out that the solution for this go to the top toolbar, select View, then Explorer, and that resolved the issue and I could see my file.
 
 ## Credits
 
 * I’d like to thank my mentor Simen Daehlin for his support and help for me to come up with this project.
 * I created this project in a very short span of time. I draw my inspiration of this project from our relevant modules at the Code Institute which has helped me create my own ideas for this project. 
 * I’d like to thank the Slack community and the tutor support team who always responded to me when I was stuck with something. 
+
 
 
