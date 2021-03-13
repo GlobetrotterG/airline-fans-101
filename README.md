@@ -58,19 +58,99 @@ Expectations
 *	A profile page that all the information which is relevant is visible 
 *	It is easy to add posts and the ability to add photos for relevant posts created
 
-Colour Theme 
+## Colour Theme 
 I used [coolors](https://coolors.co/d0ada7-5d2e46-ad6a6c-a675a1-8f3985-e8d6cb) for the colour theme of my project. 
-![airlinefans101colour](assets/images/ms3colors.png)
+
+![airlinecolour](static/assets/images/ms3colors.png)
 
 
-Fonts
-I used a selection of [Google Fonts]( https://fonts.google.com/). I selected the following: 
-Roboto
-Luckiest Guy
-Rammetto One
+## Fonts
+
+I used a selection of [Google Fonts](https://fonts.google.com/). I selected the following: 
+
+* Roboto
+* Luckiest Guy
+* Rammetto One
+
+## Technologies Used 
+
+Languages used
+
+* HTML
+* CSS 
+* JS
+* Python
+
+Libraries and Frameworks
+
+* MaterializeCSS
+* Font Awesome
+* Google Fonts
+* JQuery
+
+Tools Used
+
+* MongoDB Atlas
+* Flask
+* Heroku
+* GitPod
+* Jinja
+* Werkzeug 
+* Randomkeygen
+
+## Deployment
+
+Setup
+
+* In the IDE create an env.py file to store the sensitive data and hidden using environment variables.
+* Create a .gitignore file for files to be ignored when pushing to gitHub.
+* Add env.py file and auto generated __pycache__/ file to the .gitignore file.
+* Default environment variables setup for env.py is as follows:
+* Import os
+* Blank Line
+* os.environ.setdefault("IP", "Added by user")
+* os.environ.setdefault("PORT", "Added by user")
+* os.environ.setdefault("SECRET_KEY", "Added by user")
+* os.environ.setdefault("MONGO_URI", "Added by user")
+* os.environ.setdefault("MONGO_DBNAME", "Added by user")
+
+Heroku Deployment
+
+* Add required files for Heroku to run the app. Create requirements.txt and Procfile:
+
+```
+$ pip3 freeze --local > requirements.txt
+$ echo web: python app.py > Procfile
+```
+
+* Push these 2 files to gitHub.
+* Login to Heroku.com and from dashboard go to "new" - "create new app" and add details of app to create.
+* Setup automatic deployment by selecting "Deploy" tab then under "Deployment Method" - "connect to GitHub".
+* Add gitHub repository name "Car-Owner-Reviews-MS3-Project" and connect to app.
+* Go to settings tab for the app and select "Reveal Config Vars".
+* Add in the variables from the env.py file.
+* Back under "Deploy" tab, under "Automatic Deploys" select "Enable Automatic Deployment"
+* Under "Manual Deploy" select "Deploy Branch"
+* After Heroku has built the app it will be successfully deployed. Select "View" to launch.
+
+Cloning on GitHub
+
+* Login to GitHub.com.
+* Open my repositories.
+* Click "Code" then under "Clone" copy the link with the HTTPS URL.
+* Go to the terminal in your IDE environment.
+* Change the working directory to where you want the clone to be saved by typing cd and the name of the directory.
+* Type git clone and paste the copied HTTPS URL.
+* After pressing enter the clone will be saved to your chosen directory.
+* Local Deployment On Gitpod
+* Follow steps above to clone repository.
+* Install the libraries from the requirements.txt, in the terminal type - pip3 install -r requirements.txt.
+* Follow the "setup" steps above to create env.py and .gitignore files for the hidden environment variables.
+* The app can now be opened in a browser by typing in the terminal: python3 app.py.
 
 
-Credits
+
+## Credits
 
 * I’d like to thank my mentor Simen Daehlin for his support and help for me to come up with this project.
 * I created this project in a very short span of time. I draw my inspiration of this project from our relevant modules at the Code Institute which has helped me create my own ideas for this project. 
