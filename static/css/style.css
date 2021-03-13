@@ -4,6 +4,11 @@ body {
 	font-family: 'Roboto', sans-serif;
     background-color: #D0ADA7;   
 }
+ 
+.page-footer {
+    background-color: #5d2e46;
+    font-family: 'Rammetto One', sans-serif;
+}
 
 .nav-wrapper {
     font-family: 'Roboto', sans-serif;
@@ -42,17 +47,27 @@ body {
 }
 
 .card-panel {
-    background-color: #efd9ce;
+    background-color: #e8d6cb;
+    margin-top: 50px;
+}
+
+.color-button {
+    background-color: #5d2e46;
 }
 
 .btn-small {
     margin: 5px;
+    background-color: #5d2e46;
 }
 
 .collapsible-header .col strong {
     margin:5px;
     line-height: 45px;
 }
+
+
+
+
 
 
 
