@@ -15,6 +15,11 @@ body {
     font-weight: bolder;
 }
 
+.welcome {
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: larger;
+}
+
 .register {
     font-family: 'Luckiest Guy', sans-serif;
     color: #5d2e46;

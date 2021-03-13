@@ -53,7 +53,26 @@
             {% endif %}
         </ul>
     </header>
+
     <img src="/static/assets/images/airplane.jpg" class="responsive-img" alt="airplane">
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 welcome">
+                <h3 class="center-align">Welcome to Airline Fans 101!</h3>
+                <h5 class="center-align">
+                    We are an online community of travellers who loves sharing our experiences with our travels with
+                    different Airlines.
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 welcome flash_message">
+            <h3 class="center-align">Fasten your seatbelts. We are now taking off! <a href="{{ url_for('register') }}" class="welcome">Register Now</a></h3>
+        </div>
+    </div>
 
     <section>
         <!-- flash messages -->
@@ -75,6 +94,7 @@
 
     {% block scripts %}
     {% endblock %}
+
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
